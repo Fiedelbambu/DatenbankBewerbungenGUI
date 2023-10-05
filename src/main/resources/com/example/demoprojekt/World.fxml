@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Sphere?>
+
+<AnchorPane fx:id="AncorPane_id" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: silver;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demoprojekt.Object_3d.world">
+   <children>
+      <Sphere fx:id="sphere_earth" layoutX="300.0" layoutY="184.0" radius="50" />
+   </children>
+</AnchorPane>
