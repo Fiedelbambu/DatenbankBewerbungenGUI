@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Sphere?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AncohrPane_main" prefHeight="635.0" prefWidth="880.0" style="-fx-background-color: #fcb045;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demoprojekt.LoginController">
+   <children>
+      <Label alignment="CENTER" layoutX="333.0" layoutY="14.0" prefHeight="35.0" prefWidth="213.0" text="Login ">
+         <font>
+            <Font name="FreeSerif Bold Italic" size="56.0" />
+         </font>
+      </Label>
+      <Label layoutX="259.0" layoutY="109.0" prefHeight="22.0" prefWidth="163.0" text="Adresse : " textFill="#00040a">
+         <font>
+            <Font name="DejaVu Sans Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="200.0" layoutY="152.0" prefHeight="22.0" prefWidth="163.0" text="Benutzername : " textFill="#00040a">
+         <font>
+            <Font name="DejaVu Sans Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="251.0" layoutY="187.0" prefHeight="22.0" prefWidth="116.0" text="Passwort : " textFill="#00040a">
+         <font>
+            <Font name="DejaVu Sans Bold" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="adresse_textField" layoutX="383.0" layoutY="107.0" prefHeight="25.0" prefWidth="260.0" />
+      <TextField fx:id="benutzername_textField" layoutX="382.0" layoutY="150.0" prefHeight="25.0" prefWidth="260.0" />
+      <Button fx:id="loginButton" layoutX="383.0" layoutY="237.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="260.0" text="Login">
+         <font>
+            <Font name="DejaVu Sans Bold" size="18.0" />
+         </font></Button>
+      <PasswordField fx:id="passwort_textField" layoutX="383.0" layoutY="187.0" prefHeight="25.0" prefWidth="260.0" />
+      <AnchorPane fx:id="anchorePane" layoutY="288.0" prefHeight="323.0" prefWidth="879.0">
+         <children>
+            <Sphere fx:id="sphere_earth" layoutX="438.0" layoutY="136.0" radius="90.0" />
+            <ImageView fitHeight="323.0" fitWidth="795.0" layoutX="152.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../galaxy.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

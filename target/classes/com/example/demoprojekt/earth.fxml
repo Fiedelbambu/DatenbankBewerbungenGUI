@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Sphere?>
+
+<!-- Neues importiertes Element -->
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="314.0" prefWidth="526.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demoprojekt.Object_3d.Earth">
+   <children>
+      <ImageView fx:id="imageView_galaxy" fitHeight="314.0" fitWidth="536.0" layoutX="-8.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../../../galaxy.jpg" />
+         </image>
+      </ImageView>
+      <Sphere fx:id="earthSphere" cullFace="FRONT" layoutX="260.0" layoutY="151.0" radius="150" translateX="0" translateY="0" translateZ="-500"> <!-- Hinzugefügte Sphere -->
+      </Sphere>
+      <Sphere fx:id="sphere_new" layoutX="263.0" layoutY="151.0" radius="50" />
+   </children>
+</AnchorPane>
